@@ -444,80 +444,160 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Portfolio</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".automation">Automation</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".api">API Testing</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".web">Web</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+
+                <!-- Project 1: Selenium -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item automation">
+                    <div class="card h-100 border-0 shadow-sm rounded">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center justify-content-center bg-primary mr-3 flex-shrink-0"
+                                    style="width: 48px; height: 48px; border-radius: 48px;">
+                                    <i class="fa fa-desktop text-white"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-0">Selenium WebDriver Demo</h5>
+                            </div>
+                            <p class="text-muted mb-3">End-to-end UI test suite targeting Sauce Demo. Built with Python, POM architecture, and GitHub Actions CI/CD integration.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">Python</span>
+                                <span class="badge badge-secondary mr-1">Selenium</span>
+                                <span class="badge badge-secondary mr-1">POM</span>
+                                <span class="badge badge-secondary mr-1">GitHub Actions</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/csokanandor95/selenium-automation-demo" target="_blank"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fa fa-github mr-2"></i>View on GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+
+                <!-- Project 2: Postman -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item api">
+                    <div class="card h-100 border-0 shadow-sm rounded">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center justify-content-center bg-warning mr-3 flex-shrink-0"
+                                    style="width: 48px; height: 48px; border-radius: 48px;">
+                                    <i class="fa fa-exchange text-white"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-0">UserHub API Test Suite</h5>
+                            </div>
+                            <p class="text-muted mb-3">REST API test collection targeting ReqRes.in, built with Postman and Newman. Includes automated runs, environment variables, and HTML reporting.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-warning mr-1">Postman</span>
+                                <span class="badge badge-secondary mr-1">Newman</span>
+                                <span class="badge badge-secondary mr-1">REST API</span>                    
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/csokanandor95/userhub-api-test-suite" target="_blank"
+                                    class="btn btn-warning btn-sm text-white">
+                                    <i class="fa fa-github mr-2"></i>View on GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+
+                <!-- Project 3: Thesis -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item api">
+                    <div class="card h-100 border-0 shadow-sm rounded">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center justify-content-center bg-success mr-3 flex-shrink-0"
+                                    style="width: 48px; height: 48px; border-radius: 48px;">
+                                    <i class="fa fa-graduation-cap text-white"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-0">TMDB API Test Framework</h5>
+                            </div>
+                            <p class="text-muted mb-3">Thesis project: automated API testing framework targeting The Movie Database API. Test cases covering functional, negative, boundary value, and non-functional scenarios with a custom HTML report dashboard.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-success mr-1">Python</span>
+                                <span class="badge badge-secondary mr-1">pytest</span>
+                                <span class="badge badge-secondary mr-1">requests</span>
+                                <span class="badge badge-secondary mr-1">GitHub Actions</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/csokanandor95/tmdb-api-test-framework" target="_blank"
+                                    class="btn btn-success btn-sm">
+                                    <i class="fa fa-github mr-2"></i>View on GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+
+                <!-- Project 4: Playwright (coming soon) -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item automation">
+                    <div class="card h-100 border-0 shadow-sm rounded">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center justify-content-center bg-info mr-3 flex-shrink-0"
+                                    style="width: 48px; height: 48px; border-radius: 48px;">
+                                    <i class="fa fa-play text-white"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-0">Playwright Test Suite <span class="badge badge-info ml-1" style="font-size: 10px;">In Progress</span></h5>
+                            </div>
+                            <p class="text-muted mb-3">UI automation project built with Playwright and TypeScript. Targeting a real-world web application with POM architecture, data-driven tests, and CI/CD pipeline integration.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-info mr-1">TypeScript</span>
+                                <span class="badge badge-secondary mr-1">Playwright</span>
+                                <span class="badge badge-secondary mr-1">POM</span>
+                                <span class="badge badge-secondary mr-1">CI/CD</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/csokanandor95" target="_blank"
+                                    class="btn btn-info btn-sm text-white">
+                                    <i class="fa fa-github mr-2"></i>Coming Soon
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+
+                <!-- Project 5: Portfolio website -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item web">
+                    <div class="card h-100 border-0 shadow-sm rounded">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="d-flex align-items-center justify-content-center bg-danger mr-3 flex-shrink-0"
+                                    style="width: 48px; height: 48px; border-radius: 48px;">
+                                    <i class="fa fa-globe text-white"></i>
+                                </div>
+                                <h5 class="font-weight-bold mb-0">QA Portfolio Website</h5>
+                            </div>
+                            <p class="text-muted mb-3">This website — a personal QA portfolio customized from a template with HTML, CSS, JavaScript and hosted on GitHub Pages. Includes automated UI tests written with Playwright to validate the live site.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-danger mr-1">HTML/CSS</span>
+                                <span class="badge badge-secondary mr-1">JavaScript</span>
+                                <span class="badge badge-secondary mr-1">GitHub Pages</span>
+                                <span class="badge badge-secondary mr-1">Playwright</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="https://github.com/csokanandor95" target="_blank"
+                                    class="btn btn-danger btn-sm">
+                                    <i class="fa fa-github mr-2"></i>View on GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
