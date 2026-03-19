@@ -42,7 +42,7 @@
 
 
     // Modal Video
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
@@ -56,7 +56,7 @@
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc);
         })
-    });
+    });*/
 
 
     // Scroll to Bottom
