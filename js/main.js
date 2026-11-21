@@ -33,8 +33,10 @@
         var typed_strings = $('.typed-text').text();
         var typed = new Typed('.typed-text-output', {
             strings: typed_strings.split(', '),
-            typeSpeed: 100,
+            contentType: null, // plain text: in 'html' mode "&" is parsed as an HTML entity and skips ahead
+            typeSpeed: 80,
             backSpeed: 20,
+            backDelay: 2000, // keep each finished phrase readable for 2s before erasing
             smartBackspace: false,
             loop: true
         });
